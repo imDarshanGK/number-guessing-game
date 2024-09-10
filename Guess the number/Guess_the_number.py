@@ -24,7 +24,7 @@ def game():
     print(logo_art.logo)
     print("Let me think of a number between 1 to 50.")
     answer = random.randint(1,50)
-    level = input("Choose level of difficulty... Type 'easy' or 'head': ")
+    level = input("Choose level of difficulty... Type 'easy' or 'hard': ")
     attempts = set_difficulty(level)
     if attempts!= EASY_LEVEL_ATTEMPTS and attempts!= HARD_LEVEL_ATTEMPTS:
         print("You have entered wrong difficulty level.. Play again!..")
